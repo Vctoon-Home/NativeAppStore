@@ -2,6 +2,7 @@ name: dotnet
 on:
   push:
     branches:
+      - alpha
       - preview
       - main
 
