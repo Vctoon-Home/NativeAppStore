@@ -8,9 +8,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{FC8AF42F-BA90-4AAB-AD6B-AE1BAB1F8845}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
+		package.json = package.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{1C0AEADA-81EC-445D-A1E3-C5A20E84FE47}"
+	ProjectSection(SolutionItems) = preProject
+		.releaserc.json = .releaserc.json
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeAppStore.Test", "NativeAppStore.Test\NativeAppStore.Test.csproj", "{E0C16CB6-9AF4-4C97-AB5A-F9EC38D51CDA}"
 EndProject
@@ -18,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{85ED5B53
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDemo", "Demos\WpfDemo\WpfDemo.csproj", "{0FB95EFC-0213-4CFD-B2A9-D883FCA6714C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiDemo", "Demos\MauiDemo\MauiDemo.csproj", "{6F9D0EE4-2D0E-4401-A549-ACE1DEACCAAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemo", "Demos\MauiDemo\MauiDemo.csproj", "{6F9D0EE4-2D0E-4401-A549-ACE1DEACCAAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
