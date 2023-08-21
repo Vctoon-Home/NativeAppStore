@@ -1,6 +1,6 @@
-﻿using System.Reflection;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using NativeAppStore.Core;
+using System.Reflection;
 
 namespace NativeAppStore.Extensions;
 
@@ -20,7 +20,16 @@ public static class StoreExtensions
                 throw new ArgumentException($"Type {type} is not assignable from {typeof(IStore)}");
             }
 
-            services.AddSingleton(type);
+            services.AddSingleton(typeof(IStore), type);
+
+            services.AddSingleton(type, s =>
+            {
+                var store = (s.GetServices<IStore>().FirstOrDefault(x => x.GetType() == type) as StoreBase)!;
+
+                if (StoreOptions.EnabledCreatorStoreLoad)
+                    store.LoadStore();
+                return store;
+            });
         }
     }
 
@@ -29,7 +38,6 @@ public static class StoreExtensions
     {
         var storeTypes = new List<Type>();
 
-        // 添加正在执行的程序集
         var assemblies = storeAssemblies;
 
         foreach (var assembly in assemblies)

@@ -6,8 +6,9 @@ namespace NativeAppStore.Core;
 
 public abstract class StoreBase : IStore
 {
-    private bool? ignore = null;
 
+    private bool onApplicationExitIsRegister { get; set; }
+    private bool? ignore = null;
     private bool IgnoreStore
     {
         get
@@ -87,8 +88,6 @@ public abstract class StoreBase : IStore
         PostSaveStore();
     }
 
-    private bool onApplicationExitIsRegistered = false;
-
     public void LoadStore()
     {
         if (IgnoreStore)
@@ -96,11 +95,7 @@ public abstract class StoreBase : IStore
             return;
         }
 
-        if (!onApplicationExitIsRegistered)
-        {
-            StoreSaveExecutor.OnApplicationExit += () => this?.SaveStore();
-            onApplicationExitIsRegistered = true;
-        }
+        RegisterOnApplicationExit();
 
         var path = SavePath;
 
@@ -156,5 +151,16 @@ public abstract class StoreBase : IStore
 
     public virtual void ResetStore()
     {
+    }
+
+    private void RegisterOnApplicationExit()
+    {
+        if (onApplicationExitIsRegister)
+            return;
+
+        onApplicationExitIsRegister = true;
+
+
+        StoreSaveExecutor.OnApplicationExit += SaveStore;
     }
 }

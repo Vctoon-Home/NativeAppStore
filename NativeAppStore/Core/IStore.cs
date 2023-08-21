@@ -2,6 +2,7 @@
 
 public interface IStore
 {
+
     public void SaveStore();
     public void LoadStore();
 
