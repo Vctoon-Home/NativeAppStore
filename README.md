@@ -73,6 +73,10 @@ store.SaveStore();
     * [ ] Android
     * [ ] iOS
 
+### Others
+* [x] WPF
+* [x] Winform
+
 ## Author
 
 [Zyknow](https://github.com/zyknow)
