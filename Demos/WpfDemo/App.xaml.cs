@@ -25,7 +25,7 @@ namespace WpfDemo
 
         protected override void OnExit(ExitEventArgs e)
         {
-            StoreSaveExecutor.SaveStore();
+            StoreSaveExecutor.SaveAllStores();
             base.OnExit(e);
         }
     }
