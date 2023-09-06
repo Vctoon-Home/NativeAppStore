@@ -12,7 +12,7 @@ in .net build Native App,you may want to save some data in local, so you can use
 
 | Name                  | Version                                                                                                                                     | Download                                                                                                                                     |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Zyknow.NativeAppStore | [![Zyknow.NativeAppStore](https://img.shields.io/nuget/v/Zyknow.NativeAppStore.svg)](https://www.nuget.org/packages/Zyknow.NativeAppStore/) | [![Zyknow.NativeAppStore](https://img.shields.io/nuget/dt/Zyknow.NativeAppStore.svg)](https://www.nuget.org/packages/Zyknow.NativeAppStore/) |
+| NativeAppStore | [![NativeAppStore](https://img.shields.io/nuget/v/NativeAppStore.svg)](https://www.nuget.org/packages/NativeAppStore/) | [![NativeAppStore](https://img.shields.io/nuget/dt/NativeAppStore.svg)](https://www.nuget.org/packages/NativeAppStore/) |
 
 ## Guide
 
@@ -24,7 +24,7 @@ or if you have any ideas,Welcome to create this rep [Issues](https://github.com/
 
 ## Usage
 
-1. Add Package Reference `Zyknow.NativeAppStore`
+1. Add Package Reference `NativeAppStore`
 2. Add Services
 
 ```csharp
