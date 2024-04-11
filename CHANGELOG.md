@@ -1,3 +1,10 @@
+# [1.0.0-alpha.4](https://github.com/zyknow/NativeAppStore/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2024-04-11)
+
+
+### Bug Fixes
+
+* json file save Indented ([6983861](https://github.com/zyknow/NativeAppStore/commit/69838615cab9a3693bd18dae12ad64a86f71ac54))
+
 # [1.0.0-alpha.3](https://github.com/zyknow/NativeAppStore/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2024-04-11)
 
 
