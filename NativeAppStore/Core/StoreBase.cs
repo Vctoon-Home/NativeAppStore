@@ -81,7 +81,7 @@ public abstract class StoreBase : IStore
 
         PreSaveStore();
 
-        var str = JsonConvert.SerializeObject(this, new StoreConverter());
+        var str = JsonConvert.SerializeObject(this, Formatting.Indented, new StoreConverter());
 
         File.WriteAllText(path, str);
 
