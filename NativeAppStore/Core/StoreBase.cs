@@ -6,9 +6,9 @@ namespace NativeAppStore.Core;
 
 public abstract class StoreBase : IStore
 {
-
     private bool onApplicationExitIsRegister { get; set; }
     private bool? ignore = null;
+
     private bool IgnoreStore
     {
         get
@@ -133,19 +133,19 @@ public abstract class StoreBase : IStore
             File.Delete(path);
     }
 
-    public virtual void PreSaveStore()
+    protected virtual void PreSaveStore()
     {
     }
 
-    public virtual void PostLoadStore()
+    protected virtual void PostLoadStore()
     {
     }
 
-    public virtual void PostSaveStore()
+    protected virtual void PostSaveStore()
     {
     }
 
-    public virtual void PreLoadStore()
+    protected virtual void PreLoadStore()
     {
     }
 
