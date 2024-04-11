@@ -1,3 +1,15 @@
+# [1.0.0-alpha.5](https://github.com/zyknow/NativeAppStore/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2024-04-11)
+
+
+### Bug Fixes
+
+* remove github actions  --frozen-lockfile ([361415e](https://github.com/zyknow/NativeAppStore/commit/361415e9e0bafb8e08aad4760c3e06dd025938b0))
+
+
+### Features
+
+* update semantic-release version ([9481abb](https://github.com/zyknow/NativeAppStore/commit/9481abbe434627eeaf3b73fec9f103de2fb2f4fc))
+
 # [1.0.0-alpha.4](https://github.com/zyknow/NativeAppStore/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2024-04-11)
 
 
