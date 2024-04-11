@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/zyknow/NativeAppStore#readme",
   "dependencies": {
-    "semantic-release": "^21.0.7"
+    "semantic-release": "^23.0.8"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
